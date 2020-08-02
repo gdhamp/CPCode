@@ -34,7 +34,8 @@ def main():
 	while True:
 
 		if button.value:
-			clearLEDs()
+#			clearLEDs()
+			pixel[index-1] = OFF
 			pixels[index] = color
 			pixels.show()
 			index += 1
